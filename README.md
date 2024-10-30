@@ -1,26 +1,24 @@
 # lab06-proceduralFace
 
-Let's practice parameterization! We'll be starting with an oh-so-beautiful gingerbread man face that looks like this:
-![image](https://github.com/user-attachments/assets/4707eb0a-b25e-4eda-84e3-3bb336981781)
+My Shader can be found here: https://www.shadertoy.com/view/4f3cRN
 
-## Setup
-Start by forking [this shadertoy](https://www.shadertoy.com/view/XftyR8)
+1 = neutral and 0 = a facial expression.
 
-## Task 1
-In the faceSDF function, add a new float parameter called SUPRISE a value between 0 and 1. Copying the way EYE_SEPARATION is used, modify the face such that the gingerbread face looks more or less surprised based on the value of SURPRISE. SURPRISE = 0 should be not very surprised, and SUPRISE = 1.0 should look very surprised. Note that the face shouldn't look broken for any value in that range!
-Changing this parameter should change at least 3 geometic attributes of the face and more than one facial feature (just eyebrows are NOT SUFFICIENT).
+## Surprise Face 
 
-![image](https://github.com/user-attachments/assets/76d63b1b-f3af-456a-8031-8b8da0abe125)
+<img src="https://github.com/thumun/lab06-proceduralFace/blob/main/Screenshot%202024-10-30%20110632.png?raw=true"/>
 
-## Task 2
-In the faceSDF function, create a new float parameter called SADNESS. Follow the same guidelines as outlined in Task 1.
+The eyes are scaled up, the eyebrows go up, and the mouth is moved down, scaled down, and has more depth. 
 
-## Task 3
-Your own parameter! Create a new attribute of your choice that maps to a procedural face characteristic in the domain of [0,1]. It SHOULD NOT be a literal attribute, eg. eye-separation or mouth size, but instead a more qualitative, subjective quality that you tie to specific geometic parameters using your design sense. Have fun!
- 
-## Submission
-- Create a pull request to this repository
-- In the README, include the names of both your team members
-- In the README, create a link to your shader toy solutions
-- Make sure your shadertoy is set to UNLISTED or PUBLIC (so we can see them!)
+## Custom Face: Anxiety 
+
+<img src="https://github.com/thumun/lab06-proceduralFace/blob/main/Screenshot%202024-10-30%20110652.png"/>
+
+The eyebrows change in angle, the eyes are scaled down, and the mouth is moved down and scaled down.
+
+## Sad Face (extra credit) 
+
+<img src="https://github.com/thumun/lab06-proceduralFace/blob/main/Screenshot%202024-10-30%20114543.png?raw=true"/>
+
+The eyebrows change in angle, the eyes change to an oval shape, the mouth looks like a line, and tears are added (this SDF is from IQ's blog). 
 
